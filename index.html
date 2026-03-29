@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future-Vision Script Template</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap');
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
+                radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
+                radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
+            background-attachment: fixed;
+            color: #e2e8f0;
+        }
+
+        h1, h2, h3, .character-name {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        /* Customizable blank styling */
+        .blank {
+            display: inline-block;
+            background: rgba(236, 72, 153, 0.15);
+            color: #f472b6;
+            border: 1px dashed #f472b6;
+            padding: 0.1rem 0.5rem;
+            border-radius: 0.375rem;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin: 0 0.2rem;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        
+        .blank:hover {
+            background: rgba(236, 72, 153, 0.3);
+            transform: scale(1.05);
+        }
+
+        /* Grammar target styling */
+        .grammar-target {
+            color: #22d3ee;
+            font-weight: 700;
+            text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+        }
+
+        /* VFX/Stage Direction styling */
+        .vfx {
+            color: #a7f3d0;
+            font-style: italic;
+            font-size: 0.95em;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 0.5rem 1rem;
+            border-left: 3px solid #10b981;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin: 1rem 0;
+            display: block;
+        }
+
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto space-y-8">
+        
+        <!-- Hero Section -->
+        <header class="text-center space-y-4 py-12">
+            <div class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-sm font-semibold mb-4 tracking-widest uppercase">
+                Teacher Collaboration Draft
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 drop-shadow-lg">
+                Future-Vision Talk Show
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl mx-auto">
+                A customizable Green Screen drama script to introduce Future Continuous and Future Perfect tenses!
+            </p>
+        </header>
+
+        <!-- Instructions & Characters Card -->
+        <div class="glass-panel rounded-2xl p-6 md:p-8 shadow-2xl">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                        <span>📝</span> How to use this template
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed">
+                        Each participating teacher should fill in the pink brackets <span class="blank">[like this]</span> with their own subject-specific jokes, exaggerations, and inside jokes. 
+                        <br><br>
+                        Make sure to clearly emphasize the bright blue grammar structures when speaking (e.g., <span class="grammar-target">will have exploded</span>).
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                        <span>🎭</span> Characters
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">🎙️</span>
+                            <div>
+                                <strong class="text-purple-400 font-bold text-lg block">The Host</strong> 
+                                <span class="text-sm text-slate-300">Needs ridiculous props (like a whisk microphone) and giant sunglasses.</span>
+                                <em class="block text-sm text-purple-300 mt-1 bg-purple-500/10 p-2 rounded border border-purple-500/20"><strong>Mood/Personality:</strong> Over-the-top, cheesy game-show announcer. High energy, loud, and constantly smiling.</em>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">👩‍🏫</span>
+                            <div>
+                                <strong class="text-pink-400 font-bold text-lg block">Teacher 1: The Overworked Survivor</strong>
+                                <em class="block text-sm text-pink-300 mt-1 bg-pink-500/10 p-2 rounded border border-pink-500/20"><strong>Mood/Personality:</strong> Frantic, heavily caffeinated, and panicked. Speaks rapidly, wide-eyed, and constantly checks their watch.</em>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">👨‍🏫</span>
+                            <div>
+                                <strong class="text-blue-400 font-bold text-lg block">Teacher 2: The Dramatic Visionary</strong>
+                                <em class="block text-sm text-blue-300 mt-1 bg-blue-500/10 p-2 rounded border border-blue-500/20"><strong>Mood/Personality:</strong> Intense, highly theatrical, and overly serious. Treats teaching like an epic sci-fi movie. Uses grand hand gestures.</em>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">🧑‍🏫</span>
+                            <div>
+                                <strong class="text-green-400 font-bold text-lg block">Teacher 3: The Checked-Out Rebel</strong>
+                                <em class="block text-sm text-green-300 mt-1 bg-green-500/10 p-2 rounded border border-green-500/20"><strong>Mood/Personality:</strong> Sleepy, entirely unbothered, or "too cool." Counting down the seconds to summer, totally relaxed, slouching.</em>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">🥽</span>
+                            <div>
+                                <strong class="text-orange-400 font-bold text-lg block">Teacher 4: The Mad Scientist</strong>
+                                <em class="block text-sm text-orange-300 mt-1 bg-orange-500/10 p-2 rounded border border-orange-500/20"><strong>Mood/Personality:</strong> Wild, chaotic, and explosive. Speaks in loud bursts, laughs maniacally at their own plans, and wears imaginary safety goggles.</em>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">🧘</span>
+                            <div>
+                                <strong class="text-teal-400 font-bold text-lg block">Teacher 5: The Zen Guru</strong>
+                                <em class="block text-sm text-teal-300 mt-1 bg-teal-500/10 p-2 rounded border border-teal-500/20"><strong>Mood/Personality:</strong> Painfully slow, incredibly peaceful. Speaks in a low, soothing whisper while doing yoga poses or holding invisible crystals.</em>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1">🕵️</span>
+                            <div>
+                                <strong class="text-rose-400 font-bold text-lg block">Teacher 6: The Conspiracy Theorist</strong>
+                                <em class="block text-sm text-rose-300 mt-1 bg-rose-500/10 p-2 rounded border border-rose-500/20"><strong>Mood/Personality:</strong> Paranoid, looking around suspiciously. Whispers loudly, trusts no one, and acts like everything is a giant secret.</em>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Script -->
+        <div class="glass-panel rounded-2xl shadow-2xl overflow-hidden border-t-4 border-t-purple-500">
+            <div class="bg-slate-800/50 px-6 py-4 border-b border-white/10 flex justify-between items-center">
+                <h2 class="text-2xl font-bold text-white">The Script</h2>
+                <span class="text-sm text-slate-400 uppercase tracking-wider">Scene 1</span>
+            </div>
+            
+            <div class="p-6 md:p-10 space-y-8 text-lg leading-relaxed">
+                
+                <span class="text-center block text-slate-500 font-bold tracking-[0.2em] mb-8">[SCENE START]</span>
+
+                <span class="vfx">
+                    (VFX: The background is a swirling, badly-animated neon time vortex. The HOST stands behind a cardboard desk.)
+                </span>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Welcome, time-travelers and grammar-lovers, to <em>Future-Vision</em>! I am your host, <span class="blank">[Host Name]</span>! By the end of today's show, your minds <span class="grammar-target">will have exploded</span> with knowledge! Today, we are interviewing your very own teachers about their ultimate future plans. Let's start with <span class="blank">[Teacher 1 Name]</span>!</p>
+                </div>
+
+                <span class="vfx">
+                    (VFX: The background instantly changes to: A chaotic tornado of paper. A massive, towering mountain of ungraded school essays reaching the ceiling, surrounded by several giant, overflowing coffee cups.)
+                </span>
+
+                <!-- Teacher 1 -->
+                <div>
+                    <span class="character-name text-pink-400 font-bold text-xl uppercase block mb-1">TEACHER 1</span>
+                    <p><span class="text-slate-400 italic text-base">(Acting frantic / overly excited / exhausted)</span> Thank you, <span class="blank">[Host Name]</span>! My future plans are <span class="blank">[adjective: e.g., terrifying/epic/exhausting]</span>! By the time this school year ends, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., graded ten thousand essays / calculated the exact weight of the sun]</span>!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Wow, that is intense! What else?</p>
+                </div>
+
+                <!-- Teacher 1 -->
+                <div>
+                    <span class="character-name text-pink-400 font-bold text-xl uppercase block mb-1">TEACHER 1</span>
+                    <p>Next <span class="blank">[Day of the week]</span> at exactly <span class="blank">[Time, e.g., 3:00 AM]</span>, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., drinking my fourteenth cup of coffee / running a marathon on Mars / hiding from my own students]</span>!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Incredible! Or perhaps a cry for help! Let’s move on to <span class="blank">[Teacher 2 Name]</span>. What does the future hold for your classroom?</p>
+                </div>
+
+                <span class="vfx">
+                    (VFX: The background snaps to: <span class="blank">[Insert funny background for Teacher 2]</span>.)
+                </span>
+
+                <!-- Teacher 2 -->
+                <div>
+                    <span class="character-name text-blue-400 font-bold text-xl uppercase block mb-1">TEACHER 2</span>
+                    <p><span class="text-slate-400 italic text-base">(Acting overly dramatic / super serious / totally relaxed)</span> Listen up! By the year <span class="blank">[Future Year, e.g., 2045]</span>, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., replaced all my students with holograms / built a working time machine out of paperclips]</span>.</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Revolutionary! And what will you be doing while that happens?</p>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div>
+                    <span class="character-name text-blue-400 font-bold text-xl uppercase block mb-1">TEACHER 2</span>
+                    <p>While you guys are <span class="blank">[mundane action, e.g., playing video games / eating pizza]</span>, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., teaching history telepathically / fighting a giant robotic dinosaur]</span>!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>I'm speechless. Let's hear from <span class="blank">[Teacher 3 Name]</span>. Sir/Ma'am, what are your visionary plans?</p>
+                </div>
+
+                <span class="vfx">
+                    (VFX: The background changes to: <span class="blank">[Insert funny background for Teacher 3, e.g., a giant fluffy cloud / a rock concert stage]</span>.)
+                </span>
+
+                <!-- Teacher 3 -->
+                <div>
+                    <span class="character-name text-green-400 font-bold text-xl uppercase block mb-1">TEACHER 3</span>
+                    <p><span class="text-slate-400 italic text-base">(Acting sleepy / rockstar-like / paranoid)</span> My plans are highly ambitious. By <span class="blank">[Future time, e.g., 3:15 PM today / the time the bell rings]</span>, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., left the building / eaten all the snacks in the teachers' lounge]</span>.</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Inspiring stuff!</p>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div>
+                    <span class="character-name text-green-400 font-bold text-xl uppercase block mb-1">TEACHER 3</span>
+                    <p>And tonight, while you are doing your homework, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., sleeping for 48 hours straight / playing lead guitar for a heavy metal band]</span>. I <span class="grammar-target">will not be answering</span> emails!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Truly visionary! Next up, we have <span class="blank">[Teacher 4 Name]</span>. Tell us your explosive plans!</p>
+                </div>
+
+                <span class="vfx">
+                    (VFX: The background snaps to: <span class="blank">[Insert funny background for Teacher 4, e.g., a bubbling volcano / a laser light show / a chaotic laboratory]</span>.)
+                </span>
+
+                <!-- Teacher 4 -->
+                <div>
+                    <span class="character-name text-orange-400 font-bold text-xl uppercase block mb-1">TEACHER 4</span>
+                    <p><span class="text-slate-400 italic text-base">(Acting chaotic / wild-eyed / manic)</span> Yes! By the time the science fair arrives, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., cloned a dinosaur / accidentally shrunk the principal]</span>!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Fascinating and slightly illegal! What else?</p>
+                </div>
+
+                <!-- Teacher 4 -->
+                <div>
+                    <span class="character-name text-orange-400 font-bold text-xl uppercase block mb-1">TEACHER 4</span>
+                    <p>During lunch tomorrow, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., testing my new jetpack / mixing volatile chemicals in the cafeteria]</span>! Stand back!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>I'll be sure to wear goggles! Moving gracefully along to <span class="blank">[Teacher 5 Name]</span>. What is your cosmic destiny?</p>
+                </div>
+
+                <span class="vfx">
+                    (VFX: The background fades into: <span class="blank">[Insert funny background for Teacher 5, e.g., a serene waterfall / an endless starry galaxy / a giant mandala]</span>.)
+                </span>
+
+                <!-- Teacher 5 -->
+                <div>
+                    <span class="character-name text-teal-400 font-bold text-xl uppercase block mb-1">TEACHER 5</span>
+                    <p><span class="text-slate-400 italic text-base">(Acting peaceful / totally zen / whispering)</span> Namaste, <span class="blank">[Host Name]</span>. By the end of this cosmic cycle, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., painted the entire school rainbow / achieved total enlightenment during detention]</span>.</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>So relaxing. And your immediate plans?</p>
+                </div>
+
+                <!-- Teacher 5 -->
+                <div>
+                    <span class="character-name text-teal-400 font-bold text-xl uppercase block mb-1">TEACHER 5</span>
+                    <p>While you are stressing over exams, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., meditating on the roof / weaving a giant sweater for the school bus]</span>. Breathe in, breathe out.</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Beautiful. Finally, let's hear from <span class="blank">[Teacher 6 Name]</span>. What secrets does the future hold?</p>
+                </div>
+
+                <span class="vfx">
+                    (VFX: The background glitches abruptly to: <span class="blank">[Insert funny background for Teacher 6, e.g., a corkboard covered in red yarn / a blurry UFO / a dark basement]</span>.)
+                </span>
+
+                <!-- Teacher 6 -->
+                <div>
+                    <span class="character-name text-rose-400 font-bold text-xl uppercase block mb-1">TEACHER 6</span>
+                    <p><span class="text-slate-400 italic text-base">(Acting paranoid / suspicious / whispering loudly)</span> Shhh! They're listening. By the year <span class="blank">[Future Year]</span>, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., uncovered the truth about the cafeteria meatloaf / proved that aliens built the gymnasium]</span>!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>I knew it! And until then?</p>
+                </div>
+
+                <!-- Teacher 6 -->
+                <div>
+                    <span class="character-name text-rose-400 font-bold text-xl uppercase block mb-1">TEACHER 6</span>
+                    <p>Tomorrow at midnight, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., searching the air vents for clues / deciphering ancient codes in the library]</span>. Don't tell anyone!</p>
+                </div>
+
+                <!-- Host -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <p>Our lips are sealed! <span class="text-slate-400 italic text-base">(Turns to the camera, pulling down their giant sunglasses)</span> And what about YOU, students? In the next few weeks, you <span class="grammar-target">will be studying</span> the secrets of time itself. By the time the unit test arrives, you <span class="grammar-target">will have mastered</span> the Future Continuous and the Future Perfect tenses!</p>
+                </div>
+
+                <!-- All Teachers -->
+                <div>
+                    <span class="character-name text-yellow-400 font-bold text-xl uppercase block mb-1">ALL TEACHERS</span>
+                    <p><span class="text-slate-400 italic text-base">(Stepping into frame together, waving awkwardly as the green screen glitches behind them)</span> See you in the future!</p>
+                </div>
+
+                <span class="vfx text-center">
+                    (VFX: The screen shrinks into a tiny dot like an old TV turning off, followed by a bright, flashing "THE END" sign in comic sans font.)
+                </span>
+                
+                <span class="text-center block text-slate-500 font-bold tracking-[0.2em] mt-8">[SCENE END]</span>
+
+            </div>
+        </div>
+
+        <!-- Visual Inspiration Gallery (GitHub Images) -->
+        <div class="glass-panel rounded-2xl shadow-2xl p-6 md:p-8 mt-12 border-t-4 border-t-emerald-500">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                <span>🖼️</span> Visual Inspiration
+            </h2>
+            <p class="text-slate-300 mb-6">Here are some example green screen backgrounds for our scenes. Use these to get a feel for the mood!</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Image 1 -->
+                <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg relative group bg-slate-800">
+                    <img src="https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/1.png" 
+                         alt="Background Idea 1" 
+                         class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+                         onerror="if(!this.triedMaster){ this.triedMaster=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/master/1.png'; } else { this.src='https://placehold.co/600x400/1e293b/a7f3d0?text=Image+Not+Found+(Check+Repo+Settings)' }">
+                    <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-3">
+                        <p class="text-emerald-300 font-bold tracking-wider text-sm uppercase">Example Scene 1</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="rounded-xl overflow-hidden border border-white/10 shadow-lg relative group bg-slate-800">
+                    <img src="https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/2.png" 
+                         alt="Background Idea 2" 
+                         class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500"
+                         onerror="if(!this.triedMaster){ this.triedMaster=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/master/2.png'; } else { this.src='https://placehold.co/600x400/1e293b/a7f3d0?text=Image+Not+Found+(Check+Repo+Settings)' }">
+                    <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-3">
+                        <p class="text-emerald-300 font-bold tracking-wider text-sm uppercase">Example Scene 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cheat Sheet -->
+        <div class="mt-12">
+            <h2 class="text-3xl font-bold text-center text-white mb-8">💡 Brainstorming Cheat Sheet</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Future Perfect Card -->
+                <div class="bg-gradient-to-br from-teal-500/20 to-emerald-500/20 border border-teal-500/30 p-6 rounded-2xl backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-teal-300 mb-2">Future Perfect</h3>
+                    <p class="font-mono text-sm text-teal-100/70 mb-4">will have + past participle</p>
+                    <p class="text-slate-300 mb-4">Focus on the <strong>result</strong> or what will be completely finished by a deadline.</p>
+                    <div class="bg-black/20 p-4 rounded-lg">
+                        <span class="block text-xs uppercase text-teal-400 font-bold tracking-wider mb-2">Ideas to steal:</span>
+                        <ul class="list-disc list-inside text-slate-300 space-y-1 text-sm">
+                            <li>will have graded a million papers</li>
+                            <li>will have lost my voice</li>
+                            <li>will have read every book in the library</li>
+                            <li>will have eaten 500 cafeteria pizzas</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Future Continuous Card -->
+                <div class="bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-orange-500/30 p-6 rounded-2xl backdrop-blur-sm">
+                    <h3 class="text-xl font-bold text-orange-300 mb-2">Future Continuous</h3>
+                    <p class="font-mono text-sm text-orange-100/70 mb-4">will be + verb-ing</p>
+                    <p class="text-slate-300 mb-4">Focus on the <strong>action in progress</strong> at a specific time in the future.</p>
+                    <div class="bg-black/20 p-4 rounded-lg">
+                        <span class="block text-xs uppercase text-orange-400 font-bold tracking-wider mb-2">Ideas to steal:</span>
+                        <ul class="list-disc list-inside text-slate-300 space-y-1 text-sm">
+                            <li>will be crying over test scores</li>
+                            <li>will be training ninja squirrels</li>
+                            <li>will be sleeping peacefully</li>
+                            <li>will be grading while skydiving</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pre-Written Punchlines Box -->
+        <div class="glass-panel rounded-2xl shadow-2xl p-6 md:p-8 mt-12 border-t-4 border-t-pink-500">
+            <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                <span>🎁</span> Pre-Written Punchlines (Mix & Match)
+            </h2>
+            <p class="text-slate-300 mb-6">Brain cramp? No worries! Steal any of these ready-to-use ideas to fill in the pink blanks in the script.</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- VFX / Backgrounds -->
+                <div class="bg-white/5 p-5 rounded-xl border border-white/10 hover:bg-white/10 transition">
+                    <h4 class="text-pink-400 font-bold uppercase tracking-wider text-sm mb-3">VFX Backgrounds</h4>
+                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
+                        <li>A T-Rex trying to grade papers</li>
+                        <li>Inside a giant, bubbling cup of espresso</li>
+                        <li>A classroom floating in deep space</li>
+                        <li>A mountain of confiscated cell phones</li>
+                        <li>A medieval castle under siege by homework</li>
+                    </ul>
+                </div>
+                
+                <!-- Adjectives -->
+                <div class="bg-white/5 p-5 rounded-xl border border-white/10 hover:bg-white/10 transition">
+                    <h4 class="text-purple-400 font-bold uppercase tracking-wider text-sm mb-3">Adjectives for Plans</h4>
+                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
+                        <li>Completely unhinged</li>
+                        <li>Mildly terrifying</li>
+                        <li>Astronomically confusing</li>
+                        <li>Dangerously caffeinated</li>
+                        <li>Surprisingly sticky</li>
+                    </ul>
+                </div>
+
+                <!-- Future Perfect Ideas -->
+                <div class="bg-white/5 p-5 rounded-xl border border-teal-500/30 hover:border-teal-500/60 transition">
+                    <h4 class="text-teal-400 font-bold uppercase tracking-wider text-sm mb-3">Future Perfect Actions (will have...)</h4>
+                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
+                        <li>confiscated every cell phone in the Northern Hemisphere</li>
+                        <li>calculated the exact volume of tears cried during finals week</li>
+                        <li>built a working time machine out of paperclips and a glue stick</li>
+                        <li>read the entire internet, twice</li>
+                        <li>memorized the excuse every student has ever used</li>
+                    </ul>
+                </div>
+
+                <!-- Future Continuous Ideas -->
+                <div class="bg-white/5 p-5 rounded-xl border border-orange-500/30 hover:border-orange-500/60 transition">
+                    <h4 class="text-orange-400 font-bold uppercase tracking-wider text-sm mb-3">Future Continuous Actions (will be...)</h4>
+                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
+                        <li>grading essays while skydiving</li>
+                        <li>running from a pack of feral staplers</li>
+                        <li>drinking a gallon of espresso through a crazy straw</li>
+                        <li>teaching Shakespeare to a group of confused pigeons</li>
+                        <li>hiding under my desk and eating everyone's confiscated snacks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
