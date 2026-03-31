@@ -55,7 +55,7 @@
         }
     </style>
 </head>
-<body class="min-h-screen p-4 md:p-8">
+<body id="top" class="min-h-screen p-4 md:p-8">
 
     <div class="max-w-4xl mx-auto space-y-8">
         
@@ -77,73 +77,98 @@
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
                 <span>🎭</span> Cast of Characters & Acting Notes
             </h2>
+            
+            <div class="mb-6 inline-block px-4 py-2 bg-slate-800/80 border border-slate-600 rounded-lg shadow-lg">
+                <p class="text-cyan-300 text-sm font-semibold italic flex items-center gap-2">
+                    <span class="text-lg">👉</span> Click on any character's name below to jump directly to their script!
+                </p>
+            </div>
+
             <div class="grid md:grid-cols-2 gap-6">
                 <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">🎙️</span>
-                        <div>
-                            <strong class="text-purple-400 font-bold text-lg block">The Host (Sinan)</strong> 
-                            <em class="block text-sm text-purple-300 mt-1 bg-purple-500/10 p-2 rounded border border-purple-500/20"><strong>Mood/Personality:</strong> Over-the-top, cheesy game-show announcer. High energy, loud, constantly smiling, wearing giant sunglasses.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">👩‍🏫</span>
-                        <div>
-                            <strong class="text-pink-400 font-bold text-lg block">Burcu</strong>
-                            <em class="block text-sm text-pink-300 mt-1 bg-pink-500/10 p-2 rounded border border-pink-500/20"><strong>The Overworked Survivor:</strong> Frantic, heavily caffeinated, panicked. Speaks rapidly and constantly checks their watch.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">👨‍🏫</span>
-                        <div>
-                            <strong class="text-blue-400 font-bold text-lg block">Halley</strong>
-                            <em class="block text-sm text-blue-300 mt-1 bg-blue-500/10 p-2 rounded border border-blue-500/20"><strong>The Dramatic Visionary:</strong> Intense, theatrical, overly musical. Treats teaching like a work of art. Uses grand hand gestures.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">🧑‍🏫</span>
-                        <div>
-                            <strong class="text-green-400 font-bold text-lg block">İlayda</strong>
-                            <em class="block text-sm text-green-300 mt-1 bg-green-500/10 p-2 rounded border border-green-500/20"><strong>The Checked-Out Rebel:</strong> Sleepy, entirely unbothered, counting down to summer. Totally relaxed, slouching.</em>
-                        </div>
-                    </li>
+                    <a href="#scene-sinan" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-purple-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">🎙️</span>
+                            <div>
+                                <strong class="text-purple-400 font-bold text-lg block group-hover:underline">The Host (Sinan)</strong> 
+                                <em class="block text-sm text-purple-300 mt-1 bg-purple-500/10 p-2 rounded border border-purple-500/20"><strong>Mood/Personality:</strong> Over-the-top, cheesy game-show announcer. High energy, loud, constantly smiling, wearing giant sunglasses.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-burcu" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-pink-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">👩‍🏫</span>
+                            <div>
+                                <strong class="text-pink-400 font-bold text-lg block group-hover:underline">Burcu</strong>
+                                <em class="block text-sm text-pink-300 mt-1 bg-pink-500/10 p-2 rounded border border-pink-500/20"><strong>The Overworked Survivor:</strong> Frantic, heavily caffeinated, panicked. Speaks rapidly and constantly checks their watch.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-halley" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-blue-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">👨‍🏫</span>
+                            <div>
+                                <strong class="text-blue-400 font-bold text-lg block group-hover:underline">Halley</strong>
+                                <em class="block text-sm text-blue-300 mt-1 bg-blue-500/10 p-2 rounded border border-blue-500/20"><strong>The Dramatic Visionary:</strong> Intense, theatrical, overly musical. Treats teaching like a work of art. Uses grand hand gestures.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-ilayda" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-green-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">🧑‍🏫</span>
+                            <div>
+                                <strong class="text-green-400 font-bold text-lg block group-hover:underline">İlayda</strong>
+                                <em class="block text-sm text-green-300 mt-1 bg-green-500/10 p-2 rounded border border-green-500/20"><strong>The Checked-Out Rebel:</strong> Sleepy, entirely unbothered, counting down to summer. Totally relaxed, slouching.</em>
+                            </div>
+                        </li>
+                    </a>
                 </ul>
                 <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">🧘</span>
-                        <div>
-                            <strong class="text-teal-400 font-bold text-lg block">Asiye</strong>
-                            <em class="block text-sm text-teal-300 mt-1 bg-teal-500/10 p-2 rounded border border-teal-500/20"><strong>The Zen Guru:</strong> Painfully slow, incredibly peaceful. Speaks in a low, soothing whisper while holding invisible crystals.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">🕵️</span>
-                        <div>
-                            <strong class="text-rose-400 font-bold text-lg block">Tarık</strong>
-                            <em class="block text-sm text-rose-300 mt-1 bg-rose-500/10 p-2 rounded border border-rose-500/20"><strong>The Conspiracy Theorist:</strong> Paranoid, looking around suspiciously. Whispers loudly, trusts no one.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">👶</span>
-                        <div>
-                            <strong class="text-cyan-400 font-bold text-lg block">Gülbahar</strong>
-                            <em class="block text-sm text-cyan-300 mt-1 bg-cyan-500/10 p-2 rounded border border-cyan-500/20"><strong>The Sleep-Deprived Mom:</strong> Exhausted, swaying back and forth rocking an invisible baby. Speaks in a soothing lullaby voice but says intense things.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">🪖</span>
-                        <div>
-                            <strong class="text-stone-400 font-bold text-lg block">Gary</strong>
-                            <em class="block text-sm text-stone-300 mt-1 bg-stone-500/10 p-2 rounded border border-stone-500/20"><strong>The Retiring Drill Sergeant:</strong> Military-style, strict, barking orders, blowing a whistle. Counting down to glorious retirement.</em>
-                        </div>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-xl mt-1">📱</span>
-                        <div>
-                            <strong class="text-fuchsia-400 font-bold text-lg block">Adenya</strong>
-                            <em class="block text-sm text-fuchsia-300 mt-1 bg-fuchsia-500/10 p-2 rounded border border-fuchsia-500/20"><strong>The Viral Influencer:</strong> Holding a portable ring light, posing constantly for the camera, speaking in hashtags. Obsessed with views.</em>
-                        </div>
-                    </li>
+                    <a href="#scene-asiye" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-teal-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">🧘</span>
+                            <div>
+                                <strong class="text-teal-400 font-bold text-lg block group-hover:underline">Asiye</strong>
+                                <em class="block text-sm text-teal-300 mt-1 bg-teal-500/10 p-2 rounded border border-teal-500/20"><strong>The Zen Guru:</strong> Painfully slow, incredibly peaceful. Speaks in a low, soothing whisper while holding invisible crystals.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-tarik" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-rose-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">🕵️</span>
+                            <div>
+                                <strong class="text-rose-400 font-bold text-lg block group-hover:underline">Tarık</strong>
+                                <em class="block text-sm text-rose-300 mt-1 bg-rose-500/10 p-2 rounded border border-rose-500/20"><strong>The Conspiracy Theorist:</strong> Paranoid, looking around suspiciously. Whispers loudly, trusts no one.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-gulbahar" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-cyan-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">👶</span>
+                            <div>
+                                <strong class="text-cyan-400 font-bold text-lg block group-hover:underline">Gülbahar</strong>
+                                <em class="block text-sm text-cyan-300 mt-1 bg-cyan-500/10 p-2 rounded border border-cyan-500/20"><strong>The Sleep-Deprived Mom:</strong> Exhausted, swaying back and forth rocking an invisible baby. Speaks in a soothing lullaby voice but says intense things.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-gary" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-stone-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">🪖</span>
+                            <div>
+                                <strong class="text-stone-400 font-bold text-lg block group-hover:underline">Gary</strong>
+                                <em class="block text-sm text-stone-300 mt-1 bg-stone-500/10 p-2 rounded border border-stone-500/20"><strong>The Retiring Drill Sergeant:</strong> Military-style, strict, barking orders, blowing a whistle. Counting down to glorious retirement.</em>
+                            </div>
+                        </li>
+                    </a>
+                    <a href="#scene-adenya" class="block hover:bg-white/5 p-2 rounded-xl transition-colors outline-none focus:ring-2 focus:ring-fuchsia-500 group">
+                        <li class="flex items-start gap-3">
+                            <span class="text-xl mt-1 group-hover:scale-110 transition-transform">📱</span>
+                            <div>
+                                <strong class="text-fuchsia-400 font-bold text-lg block group-hover:underline">Adenya</strong>
+                                <em class="block text-sm text-fuchsia-300 mt-1 bg-fuchsia-500/10 p-2 rounded border border-fuchsia-500/20"><strong>The Viral Influencer:</strong> Holding a portable ring light, posing constantly for the camera, speaking in hashtags. Obsessed with views.</em>
+                            </div>
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -160,16 +185,26 @@
                 <span class="text-center block text-slate-500 font-bold tracking-[0.2em] mb-8">[SCENE START]</span>
 
                 <!-- Host Intro -->
-                <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN (HOST)</span>
+                <div id="scene-sinan" class="scroll-mt-8 relative group">
+                    <div class="flex justify-between items-start mb-1">
+                        <span class="character-name text-purple-400 font-bold text-xl uppercase block">SİNAN (HOST)</span>
+                        <a href="#top" class="opacity-0 group-hover:opacity-100 transition-opacity text-xs bg-slate-700 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full flex items-center gap-1 shadow">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
                     <p>Welcome, time-travelers and grammar-lovers, to <em>Future-Vision</em>! I am your host, Sinan! By the end of today's show, your minds <span class="grammar-target">will have exploded</span> with knowledge! Today, we are interviewing your very own teachers about their ultimate future plans. Let's start with Burcu!</p>
                 </div>
 
                 <!-- Teacher 1 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-pink-500 space-y-6 my-8">
-                    <span class="character-name text-pink-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>👩‍🏫</span> BURCU
-                    </span>
+                <div id="scene-burcu" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-pink-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-pink-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>👩‍🏫</span> BURCU
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background instantly changes to a chaotic tornado of paper. A towering mountain of ungraded school essays reaching the ceiling.)
@@ -204,10 +239,15 @@
                 </div>
 
                 <!-- Teacher 2 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-blue-500 space-y-6 my-8">
-                    <span class="character-name text-blue-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>👨‍🏫</span> HALLEY
-                    </span>
+                <div id="scene-halley" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-blue-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-blue-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>👨‍🏫</span> HALLEY
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background snaps to a sci-fi matrix. Floating holographic screens showing equations, neon blue lights.)
@@ -242,10 +282,15 @@
                 </div>
 
                 <!-- Teacher 3 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-green-500 space-y-6 my-8">
-                    <span class="character-name text-green-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🧑‍🏫</span> İLAYDA
-                    </span>
+                <div id="scene-ilayda" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-green-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-green-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>🧑‍🏫</span> İLAYDA
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background changes to a giant, fluffy CGI marshmallow floating through an endless starry night sky.)
@@ -280,10 +325,15 @@
                 </div>
 
                 <!-- Teacher 5 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-teal-500 space-y-6 my-8">
-                    <span class="character-name text-teal-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🧘</span> ASİYE
-                    </span>
+                <div id="scene-asiye" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-teal-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-teal-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>🧘</span> ASİYE
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background fades into a peaceful zen environment. An endless starry galaxy mixed with a serene waterfall.)
@@ -318,10 +368,15 @@
                 </div>
 
                 <!-- Teacher 6 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-rose-500 space-y-6 my-8">
-                    <span class="character-name text-rose-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🕵️</span> TARIK
-                    </span>
+                <div id="scene-tarik" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-rose-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-rose-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>🕵️</span> TARIK
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background glitches abruptly to a dark basement. A giant corkboard covered in red yarn connecting blurry UFO photos.)
@@ -356,10 +411,15 @@
                 </div>
 
                 <!-- Teacher 7 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-cyan-500 space-y-6 my-8">
-                    <span class="character-name text-cyan-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>👶</span> GÜLBAHAR
-                    </span>
+                <div id="scene-gulbahar" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-cyan-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-cyan-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>👶</span> GÜLBAHAR
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background changes to a chaotic nursery. Mountains of diapers instead of paper, and floating baby mobiles.)
@@ -394,10 +454,15 @@
                 </div>
 
                 <!-- Teacher 8 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-stone-500 space-y-6 my-8">
-                    <span class="character-name text-stone-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🪖</span> GARY
-                    </span>
+                <div id="scene-gary" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-stone-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-stone-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>🪖</span> GARY
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background snaps to a military boot camp obstacle course built out of school desks, with mud trenches running down the hallways.)
@@ -432,10 +497,15 @@
                 </div>
 
                 <!-- Teacher 9 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-fuchsia-500 space-y-6 my-8">
-                    <span class="character-name text-fuchsia-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>📱</span> ADENYA
-                    </span>
+                <div id="scene-adenya" class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-fuchsia-500 space-y-6 my-8 scroll-mt-8">
+                    <div class="flex justify-between items-start">
+                        <span class="character-name text-fuchsia-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                            <span>📱</span> ADENYA
+                        </span>
+                        <a href="#top" class="text-xs bg-slate-700/80 hover:bg-slate-600 text-slate-300 py-1 px-3 rounded-full transition-colors flex items-center gap-1 shadow border border-slate-600">
+                            <span>↑</span> Back to Top
+                        </a>
+                    </div>
 
                     <div class="vfx !m-0 bg-slate-900/50">
                         (VFX: The background flashes to a neon-lit streamer room with floating emojis, a giant ring light, and viral dance backgrounds projected on the whiteboard.)
