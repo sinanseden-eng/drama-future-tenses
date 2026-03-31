@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future-Vision Script Template</title>
+    <title>Future-Vision Production Script</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -24,31 +24,14 @@
             font-family: 'Space Grotesk', sans-serif;
         }
 
-        /* Customizable blank styling */
-        .blank {
-            display: inline-block;
-            background: rgba(236, 72, 153, 0.15);
-            color: #f472b6;
-            border: 1px dashed #f472b6;
-            padding: 0.1rem 0.5rem;
-            border-radius: 0.375rem;
-            font-family: monospace;
-            font-size: 0.9em;
-            margin: 0 0.2rem;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-        
-        .blank:hover {
-            background: rgba(236, 72, 153, 0.3);
-            transform: scale(1.05);
-        }
-
         /* Grammar target styling */
         .grammar-target {
             color: #22d3ee;
             font-weight: 700;
             text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
+            background: rgba(34, 211, 238, 0.1);
+            padding: 0 0.2rem;
+            border-radius: 4px;
         }
 
         /* VFX/Stage Direction styling */
@@ -78,87 +61,90 @@
         
         <!-- Hero Section -->
         <header class="text-center space-y-4 py-12">
-            <div class="inline-block px-4 py-1 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30 text-sm font-semibold mb-4 tracking-widest uppercase">
-                Teacher Collaboration Draft
+            <div class="inline-block px-4 py-1 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-sm font-semibold mb-4 tracking-widest uppercase">
+                Final Production Script
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 drop-shadow-lg">
                 Future-Vision Talk Show
             </h1>
             <p class="text-xl text-slate-300 max-w-2xl mx-auto">
-                A customizable Green Screen drama script to introduce Future Continuous and Future Perfect tenses!
+                The ultimate Green Screen drama to introduce Future Continuous and Future Perfect tenses!
             </p>
         </header>
 
-        <!-- Instructions & Characters Card -->
+        <!-- Characters Card -->
         <div class="glass-panel rounded-2xl p-6 md:p-8 shadow-2xl">
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                        <span>📝</span> How to use this template
-                    </h2>
-                    <p class="text-slate-300 leading-relaxed">
-                        Each participating teacher should fill in the pink brackets <span class="blank">[like this]</span> with their own subject-specific jokes, exaggerations, and inside jokes. 
-                        <br><br>
-                        Make sure to clearly emphasize the bright blue grammar structures when speaking (e.g., <span class="grammar-target">will have exploded</span>).
-                    </p>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                        <span>🎭</span> Characters
-                    </h2>
-                    <ul class="space-y-4">
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">🎙️</span>
-                            <div>
-                                <strong class="text-purple-400 font-bold text-lg block">The Host</strong> 
-                                <span class="text-sm text-slate-300">Needs ridiculous props (like a whisk microphone) and giant sunglasses.</span>
-                                <em class="block text-sm text-purple-300 mt-1 bg-purple-500/10 p-2 rounded border border-purple-500/20"><strong>Mood/Personality:</strong> Over-the-top, cheesy game-show announcer. High energy, loud, and constantly smiling.</em>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">👩‍🏫</span>
-                            <div>
-                                <strong class="text-pink-400 font-bold text-lg block">Teacher 1: The Overworked Survivor</strong>
-                                <em class="block text-sm text-pink-300 mt-1 bg-pink-500/10 p-2 rounded border border-pink-500/20"><strong>Mood/Personality:</strong> Frantic, heavily caffeinated, and panicked. Speaks rapidly, wide-eyed, and constantly checks their watch.</em>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">👨‍🏫</span>
-                            <div>
-                                <strong class="text-blue-400 font-bold text-lg block">Teacher 2: The Dramatic Visionary</strong>
-                                <em class="block text-sm text-blue-300 mt-1 bg-blue-500/10 p-2 rounded border border-blue-500/20"><strong>Mood/Personality:</strong> Intense, highly theatrical, and overly serious. Treats teaching like an epic sci-fi movie. Uses grand hand gestures.</em>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">🧑‍🏫</span>
-                            <div>
-                                <strong class="text-green-400 font-bold text-lg block">Teacher 3: The Checked-Out Rebel</strong>
-                                <em class="block text-sm text-green-300 mt-1 bg-green-500/10 p-2 rounded border border-green-500/20"><strong>Mood/Personality:</strong> Sleepy, entirely unbothered, or "too cool." Counting down the seconds to summer, totally relaxed, slouching.</em>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">🥽</span>
-                            <div>
-                                <strong class="text-orange-400 font-bold text-lg block">Teacher 4: The Mad Scientist</strong>
-                                <em class="block text-sm text-orange-300 mt-1 bg-orange-500/10 p-2 rounded border border-orange-500/20"><strong>Mood/Personality:</strong> Wild, chaotic, and explosive. Speaks in loud bursts, laughs maniacally at their own plans, and wears imaginary safety goggles.</em>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">🧘</span>
-                            <div>
-                                <strong class="text-teal-400 font-bold text-lg block">Teacher 5: The Zen Guru</strong>
-                                <em class="block text-sm text-teal-300 mt-1 bg-teal-500/10 p-2 rounded border border-teal-500/20"><strong>Mood/Personality:</strong> Painfully slow, incredibly peaceful. Speaks in a low, soothing whisper while doing yoga poses or holding invisible crystals.</em>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="text-xl mt-1">🕵️</span>
-                            <div>
-                                <strong class="text-rose-400 font-bold text-lg block">Teacher 6: The Conspiracy Theorist</strong>
-                                <em class="block text-sm text-rose-300 mt-1 bg-rose-500/10 p-2 rounded border border-rose-500/20"><strong>Mood/Personality:</strong> Paranoid, looking around suspiciously. Whispers loudly, trusts no one, and acts like everything is a giant secret.</em>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <span>🎭</span> Cast of Characters & Acting Notes
+            </h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">🎙️</span>
+                        <div>
+                            <strong class="text-purple-400 font-bold text-lg block">The Host (Sinan)</strong> 
+                            <em class="block text-sm text-purple-300 mt-1 bg-purple-500/10 p-2 rounded border border-purple-500/20"><strong>Mood/Personality:</strong> Over-the-top, cheesy game-show announcer. High energy, loud, constantly smiling, wearing giant sunglasses.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">👩‍🏫</span>
+                        <div>
+                            <strong class="text-pink-400 font-bold text-lg block">Burcu</strong>
+                            <em class="block text-sm text-pink-300 mt-1 bg-pink-500/10 p-2 rounded border border-pink-500/20"><strong>The Overworked Survivor:</strong> Frantic, heavily caffeinated, panicked. Speaks rapidly and constantly checks their watch.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">👨‍🏫</span>
+                        <div>
+                            <strong class="text-blue-400 font-bold text-lg block">Halley</strong>
+                            <em class="block text-sm text-blue-300 mt-1 bg-blue-500/10 p-2 rounded border border-blue-500/20"><strong>The Dramatic Visionary:</strong> Intense, theatrical, overly musical. Treats teaching like a work of art. Uses grand hand gestures.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">🧑‍🏫</span>
+                        <div>
+                            <strong class="text-green-400 font-bold text-lg block">İlayda</strong>
+                            <em class="block text-sm text-green-300 mt-1 bg-green-500/10 p-2 rounded border border-green-500/20"><strong>The Checked-Out Rebel:</strong> Sleepy, entirely unbothered, counting down to summer. Totally relaxed, slouching.</em>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">🧘</span>
+                        <div>
+                            <strong class="text-teal-400 font-bold text-lg block">Asiye</strong>
+                            <em class="block text-sm text-teal-300 mt-1 bg-teal-500/10 p-2 rounded border border-teal-500/20"><strong>The Zen Guru:</strong> Painfully slow, incredibly peaceful. Speaks in a low, soothing whisper while holding invisible crystals.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">🕵️</span>
+                        <div>
+                            <strong class="text-rose-400 font-bold text-lg block">Tarık</strong>
+                            <em class="block text-sm text-rose-300 mt-1 bg-rose-500/10 p-2 rounded border border-rose-500/20"><strong>The Conspiracy Theorist:</strong> Paranoid, looking around suspiciously. Whispers loudly, trusts no one.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">👶</span>
+                        <div>
+                            <strong class="text-cyan-400 font-bold text-lg block">Gülbahar</strong>
+                            <em class="block text-sm text-cyan-300 mt-1 bg-cyan-500/10 p-2 rounded border border-cyan-500/20"><strong>The Sleep-Deprived Mom:</strong> Exhausted, swaying back and forth rocking an invisible baby. Speaks in a soothing lullaby voice but says intense things.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">🪖</span>
+                        <div>
+                            <strong class="text-stone-400 font-bold text-lg block">Gary</strong>
+                            <em class="block text-sm text-stone-300 mt-1 bg-stone-500/10 p-2 rounded border border-stone-500/20"><strong>The Retiring Drill Sergeant:</strong> Military-style, strict, barking orders, blowing a whistle. Counting down to glorious retirement.</em>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-xl mt-1">📱</span>
+                        <div>
+                            <strong class="text-fuchsia-400 font-bold text-lg block">Adenya</strong>
+                            <em class="block text-sm text-fuchsia-300 mt-1 bg-fuchsia-500/10 p-2 rounded border border-fuchsia-500/20"><strong>The Viral Influencer:</strong> Holding a portable ring light, posing constantly for the camera, speaking in hashtags. Obsessed with views.</em>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -175,235 +161,311 @@
 
                 <!-- Host Intro -->
                 <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
-                    <p>Welcome, time-travelers and grammar-lovers, to <em>Future-Vision</em>! I am your host, <span class="blank">[Host Name]</span>! By the end of today's show, your minds <span class="grammar-target">will have exploded</span> with knowledge! Today, we are interviewing your very own teachers about their ultimate future plans. Let's start with <span class="blank">[Teacher 1 Name]</span>!</p>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN (HOST)</span>
+                    <p>Welcome, time-travelers and grammar-lovers, to <em>Future-Vision</em>! I am your host, Sinan! By the end of today's show, your minds <span class="grammar-target">will have exploded</span> with knowledge! Today, we are interviewing your very own teachers about their ultimate future plans. Let's start with Burcu!</p>
                 </div>
 
                 <!-- Teacher 1 Segment -->
                 <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-pink-500 space-y-6 my-8">
                     <span class="character-name text-pink-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>👩‍🏫</span> TEACHER 1
+                        <span>👩‍🏫</span> BURCU
                     </span>
 
                     <div class="vfx !m-0 bg-slate-900/50">
-                        (VFX: The background instantly changes to the scene below.)
-                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-pink-500/40 shadow-lg relative max-w-xl">
+                        (VFX: The background instantly changes to a chaotic tornado of paper. A towering mountain of ungraded school essays reaching the ceiling.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-pink-500/40 shadow-lg relative max-w-xl mx-auto">
                             <img src="1.png" alt="Background Scene 1" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/1.png'; } else { this.src='https://placehold.co/800x450/1e293b/f472b6?text=Upload+1.png+to+GitHub' }">
                             <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
-                                <p class="text-pink-300 font-bold tracking-wider text-xs uppercase">Teacher 1 Background</p>
+                                <p class="text-pink-300 font-bold tracking-wider text-xs uppercase">Burcu's Background</p>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <span class="character-name text-pink-400 font-bold text-lg uppercase block mb-1">TEACHER 1</span>
-                        <p><span class="text-slate-400 italic text-base">(Acting frantic / overly excited / exhausted)</span> Thank you, <span class="blank">[Host Name]</span>! My future plans are <span class="blank">[adjective: e.g., terrifying/epic/exhausting]</span>! By the time this school year ends, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., graded ten thousand essays / calculated the exact weight of the sun]</span>!</p>
+                        <span class="character-name text-pink-400 font-bold text-lg uppercase block mb-1">BURCU</span>
+                        <p><span class="text-slate-400 italic text-base">(Frantic, wide-eyed, clutching a giant coffee cup)</span> Thank you, Sinan! My plans are completely unhinged! By the time this school year ends, I <span class="grammar-target">will have graded</span> ten thousand essays on what you did for summer vacation! The papercuts are everywhere!</p>
                     </div>
 
                     <div class="pl-6 border-l-2 border-purple-500/30">
-                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">HOST</span>
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
                         <p>Wow, that is intense! What else?</p>
                     </div>
 
                     <div>
-                        <span class="character-name text-pink-400 font-bold text-lg uppercase block mb-1">TEACHER 1</span>
-                        <p>Next <span class="blank">[Day of the week]</span> at exactly <span class="blank">[Time, e.g., 3:00 AM]</span>, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., drinking my fourteenth cup of coffee / running a marathon on Mars / hiding from my own students]</span>!</p>
+                        <span class="character-name text-pink-400 font-bold text-lg uppercase block mb-1">BURCU</span>
+                        <p>Next Monday at exactly 3:00 AM, I <span class="grammar-target">will be drinking</span> my fourteenth cup of espresso and I <span class="grammar-target">will be crying</span> softly under my desk!</p>
                     </div>
                 </div>
 
                 <!-- Host Transition 1 -->
                 <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
-                    <p>Incredible! Or perhaps a cry for help! Let’s move on to <span class="blank">[Teacher 2 Name]</span>. What does the future hold for your classroom?</p>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>Incredible dedication! Or perhaps a cry for help! Let’s move on to Halley. What does the future hold for your classroom?</p>
                 </div>
 
                 <!-- Teacher 2 Segment -->
                 <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-blue-500 space-y-6 my-8">
                     <span class="character-name text-blue-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>👨‍🏫</span> TEACHER 2
+                        <span>👨‍🏫</span> HALLEY
                     </span>
 
                     <div class="vfx !m-0 bg-slate-900/50">
-                        (VFX: The background snaps to the scene below.)
-                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-blue-500/40 shadow-lg relative max-w-xl">
+                        (VFX: The background snaps to a sci-fi matrix. Floating holographic screens showing equations, neon blue lights.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-blue-500/40 shadow-lg relative max-w-xl mx-auto">
                             <img src="2.png" alt="Background Scene 2" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/2.png'; } else { this.src='https://placehold.co/800x450/1e293b/60a5fa?text=Upload+2.png+to+GitHub' }">
                             <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
-                                <p class="text-blue-300 font-bold tracking-wider text-xs uppercase">Teacher 2 Background</p>
+                                <p class="text-blue-300 font-bold tracking-wider text-xs uppercase">Halley's Background</p>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <span class="character-name text-blue-400 font-bold text-lg uppercase block mb-1">TEACHER 2</span>
-                        <p><span class="text-slate-400 italic text-base">(Acting overly dramatic / super serious / totally relaxed)</span> Listen up! By the year <span class="blank">[Future Year, e.g., 2045]</span>, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., replaced all my students with holograms / built a working time machine out of paperclips]</span>.</p>
+                        <span class="character-name text-blue-400 font-bold text-lg uppercase block mb-1">HALLEY</span>
+                        <p><span class="text-slate-400 italic text-base">(Overly dramatic, overly musical, making grand hand gestures)</span> Listen up, mortals! By the year 2045, I <span class="grammar-target">will have replaced</span> all my human students with highly-efficient, silent holograms. They never ask to go to the bathroom!</p>
                     </div>
 
                     <div class="pl-6 border-l-2 border-purple-500/30">
-                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">HOST</span>
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
                         <p>Revolutionary! And what will you be doing while that happens?</p>
                     </div>
 
                     <div>
-                        <span class="character-name text-blue-400 font-bold text-lg uppercase block mb-1">TEACHER 2</span>
-                        <p>While you guys are <span class="blank">[mundane action, e.g., playing video games / eating pizza]</span>, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., teaching history telepathically / fighting a giant robotic dinosaur]</span>!</p>
+                        <span class="character-name text-blue-400 font-bold text-lg uppercase block mb-1">HALLEY</span>
+                        <p>While you guys are playing video games, I <span class="grammar-target">will be teaching</span> Shakespeare telepathically to the entire galaxy! My mind is a wireless router!</p>
                     </div>
                 </div>
 
                 <!-- Host Transition 2 -->
                 <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
-                    <p>I'm speechless. Let's hear from <span class="blank">[Teacher 3 Name]</span>. Sir/Ma'am, what are your visionary plans?</p>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>I'm speechless. Let's hear from İlayda. Tell us, what are your visionary plans?</p>
                 </div>
 
                 <!-- Teacher 3 Segment -->
                 <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-green-500 space-y-6 my-8">
                     <span class="character-name text-green-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🧑‍🏫</span> TEACHER 3
+                        <span>🧑‍🏫</span> İLAYDA
                     </span>
 
                     <div class="vfx !m-0 bg-slate-900/50">
-                        (VFX: The background changes to the scene below.)
-                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-green-500/40 shadow-lg relative max-w-xl">
+                        (VFX: The background changes to a giant, fluffy CGI marshmallow floating through an endless starry night sky.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-green-500/40 shadow-lg relative max-w-xl mx-auto">
                             <img src="3.png" alt="Background Scene 3" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/3.png'; } else { this.src='https://placehold.co/800x450/1e293b/4ade80?text=Upload+3.png+to+GitHub' }">
                             <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
-                                <p class="text-green-300 font-bold tracking-wider text-xs uppercase">Teacher 3 Background</p>
+                                <p class="text-green-300 font-bold tracking-wider text-xs uppercase">İlayda's Background</p>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <span class="character-name text-green-400 font-bold text-lg uppercase block mb-1">TEACHER 3</span>
-                        <p><span class="text-slate-400 italic text-base">(Acting sleepy / rockstar-like / paranoid)</span> My plans are highly ambitious. By <span class="blank">[Future time, e.g., 3:15 PM today / the time the bell rings]</span>, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., left the building / eaten all the snacks in the teachers' lounge]</span>.</p>
+                        <span class="character-name text-green-400 font-bold text-lg uppercase block mb-1">İLAYDA</span>
+                        <p><span class="text-slate-400 italic text-base">(Slouching, yawning loudly, holding a neck pillow)</span> My plans are highly ambitious. By 3:15 PM today, I <span class="grammar-target">will have sprinted</span> to my car and <span class="grammar-target">will have eaten</span> all the leftover donuts in the teachers' lounge.</p>
                     </div>
 
                     <div class="pl-6 border-l-2 border-purple-500/30">
-                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">HOST</span>
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
                         <p>Inspiring stuff!</p>
                     </div>
 
                     <div>
-                        <span class="character-name text-green-400 font-bold text-lg uppercase block mb-1">TEACHER 3</span>
-                        <p>And tonight, while you are doing your homework, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., sleeping for 48 hours straight / playing lead guitar for a heavy metal band]</span>. I <span class="grammar-target">will not be answering</span> emails!</p>
+                        <span class="character-name text-green-400 font-bold text-lg uppercase block mb-1">İLAYDA</span>
+                        <p>And tonight, while you are stressing over homework, I <span class="grammar-target">will be sleeping</span> for forty-eight hours straight. I <span class="grammar-target">will not be answering</span> emails. Wake me up in July.</p>
                     </div>
                 </div>
 
                 <!-- Host Transition 3 -->
                 <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
-                    <p>Truly visionary! Next up, we have <span class="blank">[Teacher 4 Name]</span>. Tell us your explosive plans!</p>
-                </div>
-
-                <!-- Teacher 4 Segment -->
-                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-orange-500 space-y-6 my-8">
-                    <span class="character-name text-orange-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🥽</span> TEACHER 4
-                    </span>
-
-                    <div class="vfx !m-0 bg-slate-900/50">
-                        (VFX: The background snaps to the scene below.)
-                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-orange-500/40 shadow-lg relative max-w-xl">
-                            <img src="4.png" alt="Background Scene 4" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/4.png'; } else { this.src='https://placehold.co/800x450/1e293b/fb923c?text=Upload+4.png+to+GitHub' }">
-                            <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
-                                <p class="text-orange-300 font-bold tracking-wider text-xs uppercase">Teacher 4 Background</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-                        <span class="character-name text-orange-400 font-bold text-lg uppercase block mb-1">TEACHER 4</span>
-                        <p><span class="text-slate-400 italic text-base">(Acting chaotic / wild-eyed / manic)</span> Yes! By the time the science fair arrives, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., cloned a dinosaur / accidentally shrunk the principal]</span>!</p>
-                    </div>
-
-                    <div class="pl-6 border-l-2 border-purple-500/30">
-                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">HOST</span>
-                        <p>Fascinating and slightly illegal! What else?</p>
-                    </div>
-
-                    <div>
-                        <span class="character-name text-orange-400 font-bold text-lg uppercase block mb-1">TEACHER 4</span>
-                        <p>During lunch tomorrow, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., testing my new jetpack / mixing volatile chemicals in the cafeteria]</span>! Stand back!</p>
-                    </div>
-                </div>
-
-                <!-- Host Transition 4 -->
-                <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
-                    <p>I'll be sure to wear goggles! Moving gracefully along to <span class="blank">[Teacher 5 Name]</span>. What is your cosmic destiny?</p>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>Truly visionary! Moving gracefully along to Asiye. What is your cosmic destiny?</p>
                 </div>
 
                 <!-- Teacher 5 Segment -->
                 <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-teal-500 space-y-6 my-8">
                     <span class="character-name text-teal-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🧘</span> TEACHER 5
+                        <span>🧘</span> ASİYE
                     </span>
 
                     <div class="vfx !m-0 bg-slate-900/50">
-                        (VFX: The background fades into the scene below.)
-                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-teal-500/40 shadow-lg relative max-w-xl">
+                        (VFX: The background fades into a peaceful zen environment. An endless starry galaxy mixed with a serene waterfall.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-teal-500/40 shadow-lg relative max-w-xl mx-auto">
                             <img src="5.png" alt="Background Scene 5" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/5.png'; } else { this.src='https://placehold.co/800x450/1e293b/2dd4bf?text=Upload+5.png+to+GitHub' }">
                             <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
-                                <p class="text-teal-300 font-bold tracking-wider text-xs uppercase">Teacher 5 Background</p>
+                                <p class="text-teal-300 font-bold tracking-wider text-xs uppercase">Asiye's Background</p>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <span class="character-name text-teal-400 font-bold text-lg uppercase block mb-1">TEACHER 5</span>
-                        <p><span class="text-slate-400 italic text-base">(Acting peaceful / totally zen / whispering)</span> Namaste, <span class="blank">[Host Name]</span>. By the end of this cosmic cycle, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., painted the entire school rainbow / achieved total enlightenment during detention]</span>.</p>
+                        <span class="character-name text-teal-400 font-bold text-lg uppercase block mb-1">ASİYE</span>
+                        <p><span class="text-slate-400 italic text-base">(Eyes closed, smiling peacefully, holding hands in a lotus pose)</span> Namaste, Sinan. By the end of this cosmic cycle, I <span class="grammar-target">will have painted</span> the entire school rainbow, and I <span class="grammar-target">will have achieved</span> total enlightenment during detention.</p>
                     </div>
 
                     <div class="pl-6 border-l-2 border-purple-500/30">
-                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">HOST</span>
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
                         <p>So relaxing. And your immediate plans?</p>
                     </div>
 
                     <div>
-                        <span class="character-name text-teal-400 font-bold text-lg uppercase block mb-1">TEACHER 5</span>
-                        <p>While you are stressing over exams, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., meditating on the roof / weaving a giant sweater for the school bus]</span>. Breathe in, breathe out.</p>
+                        <span class="character-name text-teal-400 font-bold text-lg uppercase block mb-1">ASİYE</span>
+                        <p>While you are stressing over exams, I <span class="grammar-target">will be meditating</span> on the school roof and I <span class="grammar-target">will be weaving</span> a giant friendship bracelet for the school bus. Breathe in, breathe out.</p>
                     </div>
                 </div>
 
                 <!-- Host Transition 5 -->
                 <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
-                    <p>Beautiful. Finally, let's hear from <span class="blank">[Teacher 6 Name]</span>. What secrets does the future hold?</p>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>Beautiful. Finally, let's hear from Tarık. What secrets does the future hold?</p>
                 </div>
 
                 <!-- Teacher 6 Segment -->
                 <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-rose-500 space-y-6 my-8">
                     <span class="character-name text-rose-400 font-bold text-2xl uppercase block flex items-center gap-3">
-                        <span>🕵️</span> TEACHER 6
+                        <span>🕵️</span> TARIK
                     </span>
 
                     <div class="vfx !m-0 bg-slate-900/50">
-                        (VFX: The background glitches abruptly to the scene below.)
-                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-rose-500/40 shadow-lg relative max-w-xl">
+                        (VFX: The background glitches abruptly to a dark basement. A giant corkboard covered in red yarn connecting blurry UFO photos.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-rose-500/40 shadow-lg relative max-w-xl mx-auto">
                             <img src="6.png" alt="Background Scene 6" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/6.png'; } else { this.src='https://placehold.co/800x450/1e293b/fb7185?text=Upload+6.png+to+GitHub' }">
                             <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
-                                <p class="text-rose-300 font-bold tracking-wider text-xs uppercase">Teacher 6 Background</p>
+                                <p class="text-rose-300 font-bold tracking-wider text-xs uppercase">Tarık's Background</p>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <span class="character-name text-rose-400 font-bold text-lg uppercase block mb-1">TEACHER 6</span>
-                        <p><span class="text-slate-400 italic text-base">(Acting paranoid / suspicious / whispering loudly)</span> Shhh! They're listening. By the year <span class="blank">[Future Year]</span>, I <span class="grammar-target">will have</span> <span class="blank">[Future Perfect action: e.g., uncovered the truth about the cafeteria meatloaf / proved that aliens built the gymnasium]</span>!</p>
+                        <span class="character-name text-rose-400 font-bold text-lg uppercase block mb-1">TARIK</span>
+                        <p><span class="text-slate-400 italic text-base">(Paranoid, looking around suspiciously, whispering loudly)</span> Shhh! The principal is listening. By the year 2030, I <span class="grammar-target">will have uncovered</span> the truth about the cafeteria meatloaf, and I <span class="grammar-target">will have proved</span> that aliens built the gymnasium!</p>
                     </div>
 
                     <div class="pl-6 border-l-2 border-purple-500/30">
-                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">HOST</span>
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
                         <p>I knew it! And until then?</p>
                     </div>
 
                     <div>
-                        <span class="character-name text-rose-400 font-bold text-lg uppercase block mb-1">TEACHER 6</span>
-                        <p>Tomorrow at midnight, I <span class="grammar-target">will be</span> <span class="blank">[Future Continuous action: e.g., searching the air vents for clues / deciphering ancient codes in the library]</span>. Don't tell anyone!</p>
+                        <span class="character-name text-rose-400 font-bold text-lg uppercase block mb-1">TARIK</span>
+                        <p>Tomorrow at midnight, I <span class="grammar-target">will be crawling</span> through the air vents, and I <span class="grammar-target">will be deciphering</span> ancient codes in the library! Trust no one!</p>
+                    </div>
+                </div>
+
+                <!-- Host Transition 6 -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>My lips are sealed! Speaking of secrets, let's hear from Gülbahar, who has a brand new secret of her own!</p>
+                </div>
+
+                <!-- Teacher 7 Segment -->
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-cyan-500 space-y-6 my-8">
+                    <span class="character-name text-cyan-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                        <span>👶</span> GÜLBAHAR
+                    </span>
+
+                    <div class="vfx !m-0 bg-slate-900/50">
+                        (VFX: The background changes to a chaotic nursery. Mountains of diapers instead of paper, and floating baby mobiles.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-cyan-500/40 shadow-lg relative max-w-xl mx-auto">
+                            <img src="7.png" alt="Background Scene 7" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/7.png'; } else { this.src='https://placehold.co/800x450/1e293b/22d3ee?text=Upload+7.png+to+GitHub' }">
+                            <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
+                                <p class="text-cyan-300 font-bold tracking-wider text-xs uppercase">Gülbahar's Background</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="character-name text-cyan-400 font-bold text-lg uppercase block mb-1">GÜLBAHAR</span>
+                        <p><span class="text-slate-400 italic text-base">(Rocking an invisible baby, looking exhausted, swaying side to side)</span> Shhh, keep your voices down! By my baby's first birthday, I <span class="grammar-target">will have changed</span> ten thousand diapers, and I <span class="grammar-target">will have completely forgotten</span> what sleep feels like!</p>
+                    </div>
+
+                    <div class="pl-6 border-l-2 border-purple-500/30">
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
+                        <p>You're doing great! Any plans for the weekend?</p>
+                    </div>
+
+                    <div>
+                        <span class="character-name text-cyan-400 font-bold text-lg uppercase block mb-1">GÜLBAHAR</span>
+                        <p>Oh yes. Saturday night, while you are out having fun, I <span class="grammar-target">will be pacing</span> the hallways singing 'Baby Shark' for the 500th time, and I <span class="grammar-target">will be washing</span> sticky baby bottles at 3 AM. It's so glamorous!</p>
+                    </div>
+                </div>
+
+                <!-- Host Transition 7 -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>A true hero! Now, ATTENTION! Let's welcome Gary, who is counting down to retirement!</p>
+                </div>
+
+                <!-- Teacher 8 Segment -->
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-stone-500 space-y-6 my-8">
+                    <span class="character-name text-stone-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                        <span>🪖</span> GARY
+                    </span>
+
+                    <div class="vfx !m-0 bg-slate-900/50">
+                        (VFX: The background snaps to a military boot camp obstacle course built out of school desks, with mud trenches running down the hallways.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-stone-500/40 shadow-lg relative max-w-xl mx-auto">
+                            <img src="8.png" alt="Background Scene 8" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/8.png'; } else { this.src='https://placehold.co/800x450/1e293b/a8a29e?text=Upload+8.png+to+GitHub' }">
+                            <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
+                                <p class="text-stone-300 font-bold tracking-wider text-xs uppercase">Gary's Background</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="character-name text-stone-400 font-bold text-lg uppercase block mb-1">GARY</span>
+                        <p><span class="text-slate-400 italic text-base">(Blowing an imaginary whistle, standing extremely straight, barking orders)</span> Listen up, cadets! By 1500 hours next Friday, I <span class="grammar-target">will have survived</span> forty years of middle school dodgeball, and I <span class="grammar-target">will have confiscated</span> my one-millionth paper airplane! Dismissed!</p>
+                    </div>
+
+                    <div class="pl-6 border-l-2 border-purple-500/30">
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
+                        <p>Sir, yes sir! What will you do with all your free time?</p>
+                    </div>
+
+                    <div>
+                        <span class="character-name text-stone-400 font-bold text-lg uppercase block mb-1">GARY</span>
+                        <p>Next Monday morning, when the first bell rings, I <span class="grammar-target">will be fishing</span> on a perfectly quiet lake, and I <span class="grammar-target">will be smashing</span> my alarm clock with a heavy hammer! Do I make myself clear?!</p>
+                    </div>
+                </div>
+
+                <!-- Host Transition 8 -->
+                <div>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
+                    <p>Crystal clear! Finally, hit that subscribe button, because here comes Adenya!</p>
+                </div>
+
+                <!-- Teacher 9 Segment -->
+                <div class="bg-slate-800/40 p-6 md:p-8 rounded-2xl border-l-4 border-fuchsia-500 space-y-6 my-8">
+                    <span class="character-name text-fuchsia-400 font-bold text-2xl uppercase block flex items-center gap-3">
+                        <span>📱</span> ADENYA
+                    </span>
+
+                    <div class="vfx !m-0 bg-slate-900/50">
+                        (VFX: The background flashes to a neon-lit streamer room with floating emojis, a giant ring light, and viral dance backgrounds projected on the whiteboard.)
+                        <div class="mt-4 rounded-xl overflow-hidden border-2 border-fuchsia-500/40 shadow-lg relative max-w-xl mx-auto">
+                            <img src="9.png" alt="Background Scene 9" class="w-full h-auto object-cover" onerror="if(!this.triedRaw){ this.triedRaw=true; this.src='https://raw.githubusercontent.com/sinanseden-eng/drama-future-tenses/main/9.png'; } else { this.src='https://placehold.co/800x450/1e293b/e879f9?text=Upload+9.png+to+GitHub' }">
+                            <div class="absolute bottom-0 left-0 w-full bg-black/70 backdrop-blur-sm p-2 text-center">
+                                <p class="text-fuchsia-300 font-bold tracking-wider text-xs uppercase">Adenya's Background</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="character-name text-fuchsia-400 font-bold text-lg uppercase block mb-1">ADENYA</span>
+                        <p><span class="text-slate-400 italic text-base">(Holding up an imaginary phone on a selfie stick, posing constantly)</span> Hey besties! Hashtag Teacher Life! By the end of this semester, my classroom dance channel <span class="grammar-target">will have reached</span> one million subscribers, and I <span class="grammar-target">will have officially gone viral</span> on TikTok! Smash that like button!</p>
+                    </div>
+
+                    <div class="pl-6 border-l-2 border-purple-500/30">
+                        <span class="character-name text-purple-400 font-bold text-lg uppercase block mb-1">SİNAN</span>
+                        <p>We're all following! What's your next content drop?</p>
+                    </div>
+
+                    <div>
+                        <span class="character-name text-fuchsia-400 font-bold text-lg uppercase block mb-1">ADENYA</span>
+                        <p>During tomorrow's math test, I <span class="grammar-target">will be live-streaming</span> your panicked faces to the internet, and I <span class="grammar-target">will be doing</span> a makeup tutorial at my desk! Hashtag Sorry Not Sorry!</p>
                     </div>
                 </div>
 
                 <!-- Host Conclusion -->
                 <div>
-                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">HOST</span>
+                    <span class="character-name text-purple-400 font-bold text-xl uppercase block mb-1">SİNAN</span>
                     <p>Our lips are sealed! <span class="text-slate-400 italic text-base">(Turns to the camera, pulling down their giant sunglasses)</span> And what about YOU, students? In the next few weeks, you <span class="grammar-target">will be studying</span> the secrets of time itself. By the time the unit test arrives, you <span class="grammar-target">will have mastered</span> the Future Continuous and the Future Perfect tenses!</p>
                 </div>
 
@@ -421,103 +483,6 @@
 
             </div>
         </div>
-
-        <!-- Cheat Sheet -->
-        <div class="mt-12">
-            <h2 class="text-3xl font-bold text-center text-white mb-8">💡 Brainstorming Cheat Sheet</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- Future Perfect Card -->
-                <div class="bg-gradient-to-br from-teal-500/20 to-emerald-500/20 border border-teal-500/30 p-6 rounded-2xl backdrop-blur-sm">
-                    <h3 class="text-xl font-bold text-teal-300 mb-2">Future Perfect</h3>
-                    <p class="font-mono text-sm text-teal-100/70 mb-4">will have + past participle</p>
-                    <p class="text-slate-300 mb-4">Focus on the <strong>result</strong> or what will be completely finished by a deadline.</p>
-                    <div class="bg-black/20 p-4 rounded-lg">
-                        <span class="block text-xs uppercase text-teal-400 font-bold tracking-wider mb-2">Ideas to steal:</span>
-                        <ul class="list-disc list-inside text-slate-300 space-y-1 text-sm">
-                            <li>will have graded a million papers</li>
-                            <li>will have lost my voice</li>
-                            <li>will have read every book in the library</li>
-                            <li>will have eaten 500 cafeteria pizzas</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Future Continuous Card -->
-                <div class="bg-gradient-to-br from-orange-500/20 to-red-500/20 border border-orange-500/30 p-6 rounded-2xl backdrop-blur-sm">
-                    <h3 class="text-xl font-bold text-orange-300 mb-2">Future Continuous</h3>
-                    <p class="font-mono text-sm text-orange-100/70 mb-4">will be + verb-ing</p>
-                    <p class="text-slate-300 mb-4">Focus on the <strong>action in progress</strong> at a specific time in the future.</p>
-                    <div class="bg-black/20 p-4 rounded-lg">
-                        <span class="block text-xs uppercase text-orange-400 font-bold tracking-wider mb-2">Ideas to steal:</span>
-                        <ul class="list-disc list-inside text-slate-300 space-y-1 text-sm">
-                            <li>will be crying over test scores</li>
-                            <li>will be training ninja squirrels</li>
-                            <li>will be sleeping peacefully</li>
-                            <li>will be grading while skydiving</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Pre-Written Punchlines Box -->
-        <div class="glass-panel rounded-2xl shadow-2xl p-6 md:p-8 mt-12 border-t-4 border-t-pink-500">
-            <h2 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
-                <span>🎁</span> Pre-Written Punchlines (Mix & Match)
-            </h2>
-            <p class="text-slate-300 mb-6">Brain cramp? No worries! Steal any of these ready-to-use ideas to fill in the pink blanks in the script.</p>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-                <!-- VFX / Backgrounds -->
-                <div class="bg-white/5 p-5 rounded-xl border border-white/10 hover:bg-white/10 transition">
-                    <h4 class="text-pink-400 font-bold uppercase tracking-wider text-sm mb-3">VFX Backgrounds</h4>
-                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
-                        <li>A T-Rex trying to grade papers</li>
-                        <li>Inside a giant, bubbling cup of espresso</li>
-                        <li>A classroom floating in deep space</li>
-                        <li>A mountain of confiscated cell phones</li>
-                        <li>A medieval castle under siege by homework</li>
-                    </ul>
-                </div>
-                
-                <!-- Adjectives -->
-                <div class="bg-white/5 p-5 rounded-xl border border-white/10 hover:bg-white/10 transition">
-                    <h4 class="text-purple-400 font-bold uppercase tracking-wider text-sm mb-3">Adjectives for Plans</h4>
-                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
-                        <li>Completely unhinged</li>
-                        <li>Mildly terrifying</li>
-                        <li>Astronomically confusing</li>
-                        <li>Dangerously caffeinated</li>
-                        <li>Surprisingly sticky</li>
-                    </ul>
-                </div>
-
-                <!-- Future Perfect Ideas -->
-                <div class="bg-white/5 p-5 rounded-xl border border-teal-500/30 hover:border-teal-500/60 transition">
-                    <h4 class="text-teal-400 font-bold uppercase tracking-wider text-sm mb-3">Future Perfect Actions (will have...)</h4>
-                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
-                        <li>confiscated every cell phone in the Northern Hemisphere</li>
-                        <li>calculated the exact volume of tears cried during finals week</li>
-                        <li>built a working time machine out of paperclips and a glue stick</li>
-                        <li>read the entire internet, twice</li>
-                        <li>memorized the excuse every student has ever used</li>
-                    </ul>
-                </div>
-
-                <!-- Future Continuous Ideas -->
-                <div class="bg-white/5 p-5 rounded-xl border border-orange-500/30 hover:border-orange-500/60 transition">
-                    <h4 class="text-orange-400 font-bold uppercase tracking-wider text-sm mb-3">Future Continuous Actions (will be...)</h4>
-                    <ul class="list-disc list-inside text-sm text-slate-300 space-y-2">
-                        <li>grading essays while skydiving</li>
-                        <li>running from a pack of feral staplers</li>
-                        <li>drinking a gallon of espresso through a crazy straw</li>
-                        <li>teaching Shakespeare to a group of confused pigeons</li>
-                        <li>hiding under my desk and eating everyone's confiscated snacks</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 </body>
